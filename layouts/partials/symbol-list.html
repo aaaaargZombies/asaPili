@@ -1,0 +1,12 @@
+{{ $symbols := $.Site.GetPage (path.Join "/lang") }}
+<ul>
+  {{ range $symbols.Pages }}
+    <li>
+      <p>
+        {{ .File.ContentBaseName }}
+        {{ .Content }}
+      </p>
+      <img src="{{ .RelPermalink }}{{ index .Resources 0 }}" alt="" />
+    </li>
+  {{ end }}
+</ul>
