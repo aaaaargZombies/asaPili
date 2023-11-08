@@ -1,5 +1,5 @@
 {{ $desc :=  plainify .Summary }}
-{{ $title := (printf "%s | %s"  .Site.Title .Title ) }}
+{{ $title := .Site.Title }}
 <!-- TODO : get social image from bundle or default to site one -->
 {{ $image := resources.Get "img/social.jpg" }}
 {{ $link := .Permalink }}
