@@ -1,0 +1,16 @@
+.thumbnail-grid {
+  display: grid;
+  padding: var(--space-3xs-s);
+  gap: var(--space-xs);
+  grid-template-columns: repeat(auto-fit, minMax(clamp(7rem, 15%, 20rem), 1fr));
+}
+
+.symbol-thumbnail {
+  width: 100%;
+}
+
+button {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  border: 6px solid black;
+}

@@ -1,0 +1,23 @@
+{{ $page := $ }}
+<li class="">
+  <button type="" class="open-modal">
+    <img
+      class="symbol-thumbnail"
+      src="{{ $page.RelPermalink }}{{ index $page.Resources 0 }}"
+      alt=""
+    />
+  </button>
+  <dialog>
+    <h2>{{ $page.File.ContentBaseName }}</h2>
+    <img
+      class="symbol-thumbnail"
+      src="{{ $page.RelPermalink }}{{ index $page.Resources 0 }}"
+      alt=""
+    />
+    <p>
+      {{ $page.Content }}
+    </p>
+    <button type="" class="close-modal">close</button>
+  </dialog>
+  <!-- {{ safeHTML ( ( readFile (path.Join  $page.RelPermalink  ( index $page.Resources 0 ))  ) ) }} -->
+</li>

@@ -1,7 +1,7 @@
 {
-  "name": "gfsc-v3",
+  "name": "Hugo Starter",
   "version": "1.0.0",
-  "description": "New site build for [Geeks for Social Change](https://gfsc.studio) using Hugo static site generator.",
+  "description": "Boiler plate for Hugo projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geeksforsocialchange/gfsc-v3.git"
+    "url": ""
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/geeksforsocialchange/gfsc-v3/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/geeksforsocialchange/gfsc-v3#readme",
+  "homepage": "",
   "devDependencies": {
     "husky": "^8.0.3",
     "lint-staged": "^13.2.3",

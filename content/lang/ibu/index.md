@@ -1,3 +1,4 @@
 ---
 ---
-individual, person
+
+"individual, person"

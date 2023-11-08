@@ -1,12 +1,6 @@
 {{ $symbols := $.Site.GetPage (path.Join "/lang") }}
-<ul>
+<ul role="list" class="thumbnail-grid">
   {{ range $symbols.Pages }}
-    <li>
-      <p>
-        {{ .File.ContentBaseName }}
-        {{ .Content }}
-      </p>
-      <img src="{{ .RelPermalink }}{{ index .Resources 0 }}" alt="" />
-    </li>
+    {{ partial "symbol.html" . }}
   {{ end }}
 </ul>
